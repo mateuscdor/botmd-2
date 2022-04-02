@@ -26,7 +26,7 @@ global.APIKeys = {
 // Owner
 global.owner = ['593991398786']
 global.ownernomer = '593991398786'
-global.premium = ['593991398786']
+global.premium = ['593991398786','584121993515']
 global.ownername = 'Carlos Op'
 global.botname = 'Kitzia-Md'
 global.footer = 'Kitzia-Md'
@@ -40,7 +40,7 @@ global.sc = 'https://telegra.ph/file/137cc09589a28a90a7ed8.jpg'
 
 // Wm
 global.packname = '🥀KitziaBot-Md🥀'
-global.author = 'WhatsApp Bot Multi-Device'
+global.author = 'WhatsApp Bot Multi-Device\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAnd Premium María'
 
 // Thumb & Image random
 global.thumb = fs.readFileSync('./image/keyol.jpg')
