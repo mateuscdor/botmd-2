@@ -940,7 +940,7 @@ break
                 let encmedia = await yol.sendVideoAsSticker(m.chat, media, m, { packname: global.packname, author: global.author })
                 await fs.unlinkSync(encmedia)
             } else {
-                throw `Enviar imagen/video con cmd ${prefix + command}\nDurasi Video 1-9 Detik`
+                throw `Enviar imagen/video con cmd ${prefix + command}\nDuracion Video 1-9 segundos`
                 }
             }
             break
