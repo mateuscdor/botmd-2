@@ -1273,6 +1273,21 @@ break
                 yol.sendMessage(m.chat, buttonMessage, { quoted: m })
             }
             break
+            case 'wallpaper2': case 'wallpaper-anime': {
+                m.reply(mess.wait)
+            let buttons = [
+                    {buttonId: `wallpaper2`, buttonText: {displayText: 'Next Imagen'}, type: 1}
+                ]
+                let buttonMessage = {
+                    image: { url: 'https://hardianto.xyz/api/anime/random?sfw=wallpaper&apikey=hardianto' },
+                    caption: ` Random wpp`,
+                    footer: yol.user.name,
+                    buttons: buttons,
+                    headerType: 4
+                }
+                yol.sendMessage(m.chat, buttonMessage, { quoted: m })
+            }
+            break
             case 'baka': case 'bakaa': {
                 m.reply(mess.wait)
             let buttons = [
