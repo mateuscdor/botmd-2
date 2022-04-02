@@ -222,11 +222,11 @@ hey men, mi paypal no esta habilitado para
 *-------「 TENER EL BOT EN GRUPOS 」-------*
 
 ┌── *1 GRUPO*
-│» Zing donde sea 
+│» Gratis 
 └───────
 
-┌── *1 GRUPO +PREMIUN *
-│» +2 Zings Ojo o muslo
+┌── *1 GRUPO +PREMIUM*
+│» +1 Zing Ojo o muslo
 └───────
 
 contacto personal :
