@@ -1,7 +1,7 @@
 /*
-   * Create By Riych Dwayne
-   * Contact Me on wa.me/6281575886399
-   * Follow https://github.com/riychuhuy
+   * Create By CarlosOp
+   * Contact Me on wa.me/593991398786
+   * Follow https://github.com/carlospopon
 */
 
 const fs = require('fs')
