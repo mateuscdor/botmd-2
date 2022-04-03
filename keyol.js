@@ -1211,6 +1211,11 @@ break
                 yol.sendMessage(m.chat, { image: { url: 'https://hardianto.xyz/api/anime/random?sfw=nekoGif&apikey=hardianto' }, caption: 'Generate Random ' + command }, { quoted: m })
             }
             break
+            case 'nekogif': {
+                m.reply(mess.wait)
+                yol.sendMessage(m.chat, { gif: { url: 'https://hardianto.xyz/api/anime/random?sfw=nekoGif&apikey=hardianto' }, caption: 'Generate Random ' + command }, { quoted: m })
+            }
+            break
 	    case 'imgpareja': {
                 m.reply(mess.wait)
                 let anu = await fetchJson('https://raw.githubusercontent.com/iamriz7/kopel_/main/kopel.json')
