@@ -561,7 +561,7 @@ let teks = ` *👥 Tag All*\n\n`
 │ 
 └────
 
-*${prefix}hapusvote* - para borrar votos`
+*${prefix}deletevoto* - para borrar votos`
 let buttonsVote = [
   {buttonId: `${prefix}votopositivo`, buttonText: {displayText: 'VOTAR SI'}, type: 1},
   {buttonId: `${prefix}votonegativo`, buttonText: {displayText: 'VOTAR NO'}, type: 1}
