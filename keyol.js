@@ -1352,7 +1352,7 @@ break
                 yol.sendMessage(m.chat, { image: { url: api('riykey', '/textpro/' + command, { text: text }, 'apikey') }, caption: `Text Pro ${command}` }, { quoted: m})
 	    }
             break
-            case 'magma': case 'neon-light': case 'multi-color': case 'neon-devil': case 'glossy': {
+            case 'magma2': case 'neon-light': case 'multi-color': case 'neon-devil': case 'glossy': {
              if (!isPremium && global.db.data.users[m.sender].limit < 1) return m.reply(mess.endLimit) // respon ketika limit habis
 		            db.data.users[m.sender].limit -= 1 // -1 limit
                 if (!text) throw `Ejemplo : ${prefix + command} texto`
