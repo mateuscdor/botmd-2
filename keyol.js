@@ -1201,6 +1201,11 @@ break
                 yol.sendMessage(m.chat, { image: { url: api('riykey', '/api/random/'+command, {}, 'apikey') }, caption: 'Generar imagen aleatoria de ' + command }, { quoted: m })
             }
             break
+            case 'avatar': {
+                m.reply(mess.wait)
+                yol.sendMessage(m.chat, { image: { url: api('bri', '/api/random/'+command, {}, 'apikey') }, caption: 'Generar imagen aleatoria de ' + command }, { quoted: m })
+            }
+            break
             case 'smug': {
                 m.reply(mess.wait)
                 yol.sendMessage(m.chat, { image: { url: 'https://hardianto.xyz/api/anime/random?sfw=smug&apikey=hardianto' }, caption: 'para que esta imagen se torne en movimiento conviertela a sticker😼\nRandom ' + command }, { quoted: m })
