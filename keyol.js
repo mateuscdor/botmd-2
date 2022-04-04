@@ -1352,6 +1352,14 @@ break
                 yol.sendMessage(m.chat, { image: { url: api('riykey', '/textpro/' + command, { text: text }, 'apikey') }, caption: `Text Pro ${command}` }, { quoted: m})
 	    }
             break
+            case 'magma': case 'neon-light': case 'multi-color': case 'neon-devil': case 'glossy': {
+             if (!isPremium && global.db.data.users[m.sender].limit < 1) return m.reply(mess.endLimit) // respon ketika limit habis
+		            db.data.users[m.sender].limit -= 1 // -1 limit
+                if (!text) throw `Ejemplo : ${prefix + command} texto`
+                m.reply(mess.wait)
+                yol.sendMessage(m.chat, { image: { url: api('ryu', '/textpro/' + command, { text: text }, 'apikey') }, caption: `Text Pro ${command}` }, { quoted: m})
+	    }
+            break
 	    case 'shadow': case 'romantic': case 'smoke': case 'burnpapper': case 'naruto': case 'lovemsg': case 'grassmsg': case 'lovetext': case 'coffecup': case 'butterfly': case 'harrypotter': case 'retrolol': {
                    if (!isPremium && global.db.data.users[m.sender].limit < 1) return m.reply(mess.endLimit) // respon ketika limit habis
 		            db.data.users[m.sender].limit -= 1 // -1 limit
