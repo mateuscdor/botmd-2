@@ -1203,7 +1203,7 @@ break
             break
             case 'avatar': {
                 m.reply(mess.wait)
-                yol.sendMessage(m.chat, { image: { url: api('bri', '/api/random/'+command, {}, 'apikey') }, caption: 'Generar imagen aleatoria de ' + command }, { quoted: m })
+                yol.sendMessage(m.chat, { image: { url: api('bri', '/random/'+command, {}, 'apikey') }, caption: 'Generar imagen aleatoria de ' + command }, { quoted: m })
             }
             break
             case 'smug': {
