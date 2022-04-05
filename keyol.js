@@ -960,6 +960,12 @@ break
             m.reply(db)
         }
         break
+case 'simi':
+let teks = args.join(' ');
+let anu = await fetchJson(`https://api-alc.herokuapp.com/api/other/simi?text=${teks}&apikey=ConfuMods`)
+let res = anu.result;
+m.reply(res)
+break
             case 'emojimix': {
 	        if (!text) throw `Ejemplo : ${prefix + command} 😅+🤔`
 		let [emoji1, emoji2] = text.split`+`
