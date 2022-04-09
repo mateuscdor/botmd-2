@@ -64,6 +64,7 @@ return`
 │» ${prefix}cat
 │» ${prefix}foxgirl
 │» ${prefix}neko
+│» ${prefix}imggif
 │» ${prefix}shinobu
 │» ${prefix}waifus (nsfw)
 │» ${prefix}nekos (nsfw)
@@ -142,6 +143,7 @@ return`
 ┌── *Convertidor Menu*
 │» ${prefix}toimage
 │» ${prefix}removebg
+│» ${prefix}smeme
 │» ${prefix}sticker
 │» ${prefix}emojimix
 │» ${prefix}tovideo
@@ -178,7 +180,7 @@ return`
 │» ${prefix}delmsg
 └───────
 
-┌── *Voice Changer*
+┌── *menú de voz*
 │» ${prefix}bass
 │» ${prefix}blown
 │» ${prefix}deep
@@ -197,6 +199,7 @@ return`
 │» ${prefix}chat [opcion]
 │» ${prefix}join [link]
 │» ${prefix}leave
+│» ${prefix}creditos
 │» ${prefix}block @user
 │» ${prefix}unblock @user
 │» ${prefix}bcgroup [text]
@@ -238,5 +241,19 @@ https://api.whatsapp.com/send?phone=593991398786&text=Hey,+quiero+obtener+los+be
 exports.sourcecode = (sc) => {
 	return`
 Script : ${sc}
+`
+}
+
+//Agradecimiento
+exports.thanksto = () => {
+	return`
+┌── 「 *Thanks To* 」
+├ DikaArdnt
+├ Zeeoneofc
+├ FatihArridho
+├ Sanzy
+├ Yoga
+├ RiychDwayne
+└───────
 `
 }
