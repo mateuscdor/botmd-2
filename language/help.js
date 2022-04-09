@@ -249,11 +249,9 @@ exports.thanksto = () => {
 	return`
 ┌── 「 *Thanks To* 」
 ├ DikaArdnt
-├ Zeeoneofc
-├ FatihArridho
+├ CarlosOp
 ├ Sanzy
-├ Yoga
-├ RiychDwayne
+├ and all bot creators
 └───────
 `
 }
