@@ -3,6 +3,10 @@
    * Contact Me on wa.me/593991398786
    * Follow https://github.com/carlospopon
 */
+//infobot
+exports.infobot = () => {
+	return``
+}
 
 // Menu*
 exports.menu = (prefix, upvote) => {
