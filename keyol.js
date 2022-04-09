@@ -1566,7 +1566,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 yol.relayMessage(m.chat, template.message, { messageId: template.key.id })
                 }
 break
-case 'listmenu':{
+case 'menu': case 'lismenu':{
 let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 listMessage :{
                     title: `Hola ${pushname}`,
