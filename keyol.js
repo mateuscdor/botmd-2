@@ -1517,6 +1517,55 @@ break
 		yol.sendMessage(m.chat, { audio: { url: result.audio }, fileName: result.title+'.mp3', mimetype: 'audio/mpeg' }, { quoted: m })
 	    }
 	    break
+                    case 'bug': case 'report': {
+                    	if(!text) throw `Introduzca el ejemplo de error\n\n${command} : Menu Erroneo `
+                    	yol.sendMessage(`593991398786@s.whatsapp.net`, {text: `*Informe de error de:* wa.me/${m.sender.split("@")[0]}
+Mensaje de informe: ${text}` })
+m.reply(`Reportado con éxito al propietario\n\nAsegúrese de que el error sea válido, si juega con esto, use esta función una y otra vez sin motivo, será bloqueado con seguridad !`)
+                    }
+                    break 
+case 'teste': case 'test': case 'robot': case 'kitziabot': case 'kitzia':{
+                respon = `Hola ${pushname}
+Estoy activo🙈 no creo que me encuentres inactivo bro\nme active hace ${runtime(process.uptime())}💘`
+const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+                    templateMessage: {
+                        hydratedTemplate: {
+                            hydratedContentText: respon,
+                            locationMessage: {
+                            jpegThumbnail: fs.readFileSync('./image/keyol.jpg')},
+                            hydratedFooterText: `KITZIA BOT INC`,
+                            hydratedButtons: [{
+                                urlButton: {
+                                    displayText: '❤=AND FOLLOW ME',
+                                    url: 'https://vm.tiktok.com/ZMLCwfham/'
+                                }
+                            }, {
+                            	urlButton: {
+                                displayText: 'CANAL YOUTUBE',
+                                    url: 'https://youtube.com/channel/UCCfr9OPXCCOqRhQlI1pjxzQ'
+                                }
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'MI MENU',
+                                    id: `${prefix}menu`
+                                }
+                                }, {
+                                quickReplyButton: {
+                                    displayText: 'SOBRE MI',
+                                    id: `${prefix}infobot`
+                                }
+                                }, {
+                                quickReplyButton: {
+                                    displayText: 'OWNER',
+                                    id: `${prefix}owner`
+                                }
+                            }]
+                        }
+                    }
+                }), { userJid: m.chat })
+                yol.relayMessage(m.chat, template.message, { messageId: template.key.id })
+                }
+break
 		   case 'bass': case 'blown': case 'deep': case 'saturado': case 'fast': case 'fat': case 'nightcore': case 'reversa': case 'robot': case 'lento': case 'suave': case 'ardilla':
                 try {
                 let set
