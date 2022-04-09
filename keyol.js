@@ -1167,6 +1167,69 @@ break
                 yol.sendMessage(m.chat, { video: { url: media.dl_link }, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: ` titulo : ${media.title}\n tamaño : ${media.filesizeF}\n Url : ${isUrl(text)}\n Ext : MP3\n Resolucion : ${args[1] || '360p'}` }, { quoted: m })
             }
             break
+	    case 'play2': case 'ytplay2': {
+                if (!text) throw `Ejemplo : ${prefix + command} rebeldía`
+                let yts = require("yt-search")
+                let search = await yts(text)
+                let anu = search.videos[Math.floor(Math.random() * search.videos.length)]
+                    ngen = `
+🔮 TITULO : ${anu.title}
+🔮 EXT : Search
+🔮 ID : ${anu.videoId}
+🔮 DURACION : ${anu.timestamp}
+🔮 VIEWS : ${anu.views}
+🔮 FECHA DE SUBIDA : ${anu.ago}
+🔮 AUTOR : ${anu.author.name}
+🔮 CANAL : ${anu.author.url}
+🔮 DESCRIPCIÓN : ${anu.description}
+`
+message = await prepareWAMessageMedia({ image : { url: anu.thumbnail } }, { upload:   yol.waUploadToServer })
+                template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+                    templateMessage: {
+                        hydratedTemplate: {
+                            imageMessage: message.imageMessage,
+                            hydratedContentText: ngen,
+                            hydratedFooterText: `Reproduciendo: ${text}`,
+                            hydratedButtons: [{
+                                urlButton: {
+                                    displayText: 'YOUTUBE',
+                                    url: `${anu.url}`
+                                }
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'MUSICA',
+                                    id: `mp3 ${anu.url} 320kbps`
+                                    }
+                                },{quickReplyButton: {
+                                    displayText: 'VIDEO',
+                                    id: `mp4 ${anu.url} 360p`
+                                }
+                            }]
+                        }
+                    }
+                }), { userJid: m.chat, quoted: m })
+                  yol.relayMessage(m.chat, template.message, { messageId: template.key.id })
+            }
+            break
+	    case 'mp3': case 'ytaudio2': {
+                let { yta } = require('./lib/y2mate')
+                if (!text) throw `ejemplo : ${prefix + command} https://youtu.be/9lfFspVTRtA 320kbps`
+                let quality = args[1] ? args[1] : '320kbps'
+                let media = await yta(text, quality)
+                if (media.filesize >= 999999) return reply('El tamaño del audio es demasiado grande '+util.format(media))
+                yol.sendImage(m.chat, media.thumb, `🟡 Titulo : ${media.title}\n🎀 Tamaño : ${media.filesizeF}\n📡 Url : ${isUrl(text)}\n📜 Ext : MP3\n📑 Resolución : ${args[1] || '320kbps'}`, m)
+                yol.sendMessage(m.chat, { audio: { url: media.dl_link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp3` }, { quoted: m })
+            }
+            break
+            case 'mp4': case 'ytvideo2': {
+                let { ytv } = require('./lib/y2mate')
+                if (!text) throw `Ejemplo : ${prefix + command} https://youtu.be/9lfFspVTRtA 360p`
+                let quality = args[1] ? args[1] : '360p'
+                let media = await ytv(text, quality)
+                if (media.filesize >= 999999) return reply('El tamaño del video es demasiado grande '+util.format(media))
+                yol.sendMessage(m.chat, { video: { url: media.dl_link }, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `🌟 Titulo : ${media.title}\n👜 Tamaño : ${media.filesizeF}\n🌼 Url : ${isUrl(text)}\n🌍 Ext : MP3\n🔮 Resolución : ${args[1] || '360p'}` }, { quoted: m })
+            }
+            break
 	    case 'getmusic': {
                 let { yta } = require('./lib/y2mate')
                 if (!text) throw `Ejemplo : ${prefix + command} 1`
