@@ -1566,6 +1566,121 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 yol.relayMessage(m.chat, template.message, { messageId: template.key.id })
                 }
 break
+case 'listmenu':{
+let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+                listMessage :{
+                    title: `Hola ${pushname}`,
+                    description: `Bot de WhatsApp con funciones geniales y ricas`,
+                    buttonText: "KITZIA BOT MENU",
+                    footerText: "Kitzia BOT INC 2022",
+                    listType: "SINGLE_SELECT",
+                    sections: [{
+								"title": "COMANDOS DE GRUPO",
+								"rows": [
+									{
+										"title": "GRUPO CMD",
+										"description": "Mis funciones en grupos",
+										"rowId": `${prefix}groupmenu`
+									}
+								]
+							},
+							{
+								"title": "KITZIA INC 2022 CARACTERÍSTICAS",
+								"rows": [
+									{
+										"title": "MENU CMD",
+										"description": "Mi menú completo!",
+										"rowId": `${prefix}allmenu`
+									},
+									{
+										"title": "DOWNLOAD CMD",
+										"description": "Cosas que puedo descargar",
+										"rowId": `${prefix}downloadmenu`
+									},
+									{
+										"title": "SEARCH CMD",
+										"description": "Cosas que puedo buscar!",
+										"rowId": `${prefix}searchmenu`
+									},
+										{
+											"title": "ANIME CMD",
+										"description": "ANIMES RANDOMS",
+										"rowId": `${prefix}menuanime`
+										},
+										{
+											"title": "DIVERSIDAD CMD",
+										"description": "menu de cosas divertidas",
+										"rowId": `${prefix}funmenu`
+										},
+										{
+											"title": "CONVERT CMD",
+										"description": "Menu de conversión",
+										"rowId": `${prefix}convertmenu`
+										},
+										{
+										"title": "LOGOS CMD",
+										"description": "esto puede contener errores",
+										"rowId": `${prefix}logomenu`
+										},
+										{
+											"title": "DATABASE CMD",
+										"description": "mi database",
+										"rowId": `${prefix}databasemenu`
+										},
+										{
+											"title": "MODIFICADOR CMD",
+										"description": "puedo reconvertir audiod",
+										"rowId": `${prefix}voicemenu`
+										}
+								]
+							},
+							{
+								"title": "PRINCIPAL",
+								"rows": [
+									{
+										"title": " LO PRINCIPAL!",
+										"description": "esto es algo necesario para mi",
+										"rowId": `${prefix}mainmenu`
+									}
+								]
+							},
+							{
+								"title": "INFO DEL BOT",
+								"rows": [
+									{
+										"title": "MI INFORMACIÓN",
+										"description": "Aqui te muestro mi información siendo un bot",
+										"rowId": `${prefix}infobot`
+									}
+								]
+							},
+							{
+								"title": "OWNER",
+								"rows": [
+									{
+										"title": "OWNER",
+										"description": "Características para mi owner",
+										"rowId": `${prefix}ownermenu`
+									}
+								]
+							},
+							{
+								"title": "CREDITOS",
+								"rows": [
+									{
+										"title": "CreditosBots",
+										"description": "Agradecimiento general a creadores !!",
+										"rowId": `${prefix}creditos`
+									}
+								]
+							}
+						],
+          listType: 1
+                }
+            }), {})
+            yol.relayMessage(m.chat, template.message, { messageId: template.key.id })
+            }
+            break
 		   case 'bass': case 'blown': case 'deep': case 'saturado': case 'fast': case 'fat': case 'nightcore': case 'reversa': case 'robot': case 'lento': case 'suave': case 'ardilla':
                 try {
                 let set
