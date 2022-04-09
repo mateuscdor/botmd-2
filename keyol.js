@@ -1570,7 +1570,7 @@ case 'menu': case 'lismenu':{
 let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 listMessage :{
                     title: `Hola ${pushname}`,
-                    description: `Bot de WhatsApp con funciones geniales y ricas`,
+                    description: `Soy una bot de WhatsApp con funciones geniales que te ayudaran!\n• Fecha del servidor : ${moment.tz('America/Guayaquil').format('DD/MM/YY')}\nsi encuentras errores y bugs no dudes en reportarlos usando ${prefix}bug *texto*`,
                     buttonText: "KITZIA BOT MENU",
                     footerText: "Kitzia BOT INC 2022",
                     listType: "SINGLE_SELECT",
