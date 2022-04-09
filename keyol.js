@@ -1631,6 +1631,9 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
 case 'menu':
 	await yol.send5ButGif(from, `┌── *Info user*\n│» Nombre : ${pushname}\n│» Biografia : No detectada\n│» Numero : ${sender.split("@")[0]}\n│» Wa Api : http://wa.me/${sender.split("@")[0]}\n│» Usuario : ${isCreator ? `Owner ${ownername}` : isPremium ? `Usuario especial ${botname}` : `${botname}`}\n│» Estado : ${isCreator ? 'Owner ( ilimitado)' : isPremium ? 'Premium' : 'free'}\n│» Límite diario : ${isCreator ? 'Owner (ilimitado)' : isPremium ? 'Ilimitado' : (sender, limitharian)}\n│» Límite diario del juego : ${isCreator ? 'Owner (Ilimitado)' : (sender, limitgame)}\n└───────\n\n┌── *Info Bot*\n│» Biblioteca : Baileys Multi Device\n│» Nombre Bot : ${botname}\n│» Creador : ${ownername}\n│» Autor : DikaArdnt.\n│» Usuarios : ${Object.keys(global.db.data.users).length}\n└───────` + '\n' + lang.menu(prefix) , `${footer}`, [{"urlButton": {"displayText": "Source Code","url": `${sc}`}},{"urlButton": {"displayText": "Website","url": `${myweb}`}},{"quickReplyButton": {"displayText": "ser premium","id": 'donar'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}}] )
 	break
+case 'creditos':
+await yol.send5ButImg(from, `` + '' + lang.thanksto(), `© ${footer}`,thumb, [{"urlButton": {"displayText": "Source Code","url": `${sc}`}},{"urlButton": {"displayText": "Website","url": `${myweb}`}},{"quickReplyButton": {"displayText": "All Menu","id": 'menu'}},{"quickReplyButton": {"displayText": "owner","id": 'owner'}},{"quickReplyButton": {"displayText": "Ping and Runtine","id": 'ping'}}] )
+break
 case 'donar':
 	await yol.send5ButImg(from, `` + '' + lang.donasi(), `${footer}`,thumb, [{"urlButton": {"displayText": "Source Code","url": `${sc}`}},{"urlButton": {"displayText": "Website","url": `${myweb}`}},{"quickReplyButton": {"displayText": "Ser premium","id": 'donar'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}}] )
 	break
