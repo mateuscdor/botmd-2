@@ -37,7 +37,7 @@ global.ig = 'https://instagram.com/c4rlos_9e'
 global.region = 'Planet Equador'
 
 // Keperluan buttons
-global.myweb = 'https://wa.me/593991398786'
+global.myweb = 'https://github.com/DikaArdnt/Hisoka-Morou'
 global.sc = 'https://telegra.ph/file/137cc09589a28a90a7ed8.jpg'
 
 // Wm
