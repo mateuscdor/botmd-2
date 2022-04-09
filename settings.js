@@ -13,7 +13,8 @@ global.APIs = {
 	harn: 'https://hardianto.xyz',
 	xteam: 'https://api.xteam.xyz',
 	ryu: 'https://api-ryubotz.herokuapp.com',
-        bri: 'http://brizas-api.herokuapp.com'	
+        bri: 'http://brizas-api.herokuapp.com',
+	vio: 'https://api.violetics.pw',	
 }
 
 // Apikey Website Api
@@ -23,6 +24,7 @@ global.APIKeys = {
     'https://api.xteam.xyz': '5bd33b276d41d6b4',
     'https://api-ryubotz.herokuapp.com': 'RyuBotz',
     'http://brizas-api.herokuapp.com': 'brizaloka',
+    'https://api.violetics.pw': 'beta',
 }
 
 // Owner
