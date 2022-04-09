@@ -13,6 +13,8 @@ exports.menu = (prefix, upvote) => {
 return`
 ┌── *Grupo Menu*
 │» ${prefix}linkgrupo
+│» ${prefix}bug [reporte de bugs]
+│» ${prefix}report [reportar bug]
 │» ${prefix}ephemeral [opcion]
 │» ${prefix}setppgc [imagen]
 │» ${prefix}setname [text]
@@ -36,6 +38,8 @@ return`
 
 ┌── *Downloader Menu*
 │» ${prefix}tiktoknowm [url]
+│» ${prefix}mp3 [url]
+│» ${prefix}mp4 [url]
 │» ${prefix}tiktokwm [url]
 │» ${prefix}tiktokmp3 [url]
 │» ${prefix}ytmp3 [url]
@@ -46,6 +50,7 @@ return`
 
 ┌── *Search Menu*
 │» ${prefix}play [consulta]
+│» ${prefix}play2 [consulta]
 │» ${prefix}yts [consulta]
 │» ${prefix}google [consulta]
 │» ${prefix}gimage [consulta]
@@ -163,6 +168,7 @@ return`
 
 ┌── *Main Menu*
 │» ${prefix}ping
+│» ${prefix}test
 │» ${prefix}owner
 │» ${prefix}Menu
 │» ${prefix}delete
