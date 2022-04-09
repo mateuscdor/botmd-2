@@ -82,66 +82,57 @@ return`
 └───────
 
 ┌── *Text Pro Menu*
-│» ${prefix}3dchristmas
-│» ${prefix}3ddeepsea
-│» ${prefix}americanflag
+│» ${prefix}3d-effect
+│» ${prefix}1917-style
+│» ${prefix}3d-rubystone
+│» ${prefix}3d-text-sub-zombie
+│» ${prefix}3dengraved
+│» ${prefix}3dluxury
+│» ${prefix}3dlove
+│» ${prefix}3dgolden
 │» ${prefix}3dscifi
-│» ${prefix}3drainbow
+│» ${prefix}3dtext-effect
+│» ${prefix}3dunderwater
 │» ${prefix}3dwaterpipe
-│» ${prefix}halloweenskeleton
-│» ${prefix}sketch
-│» ${prefix}bluecircuit
-│» ${prefix}space
-│» ${prefix}metallic
-│» ${prefix}fiction
-│» ${prefix}greenhorror
-│» ${prefix}transformer
-│» ${prefix}berry
-│» ${prefix}thunder
-│» ${prefix}magma
-│» ${prefix}3dcrackedstone
-│» ${prefix}3dneonlight
-│» ${prefix}impressiveglitch
-│» ${prefix}naturalleaves
-│» ${prefix}fireworksparkle
-│» ${prefix}matrix
-│» ${prefix}dropwater
-│» ${prefix}harrypotter
-│» ${prefix}foggywindow
-│» ${prefix}neondevils
-│» ${prefix}christmasholiday
-│» ${prefix}3dgradient
-│» ${prefix}blackpink
-│» ${prefix}gluetext
+│» ${prefix}alice-league-of-kings
+│» ${prefix}angel-wing-galaxy
+│» ${prefix}anubis
+│» ${prefix}arch-crossfire
+│» ${prefix}art-shader
+│» ${prefix}assassins-creed
+│» ${prefix}azzenka-league-of-kings
+│» ${prefix}birthday-cards
+│» ${prefix}birthday-greeting
+│» ${prefix}birthday-roses
+│» ${prefix}black-metal
+│» ${prefix}blood-frosted
+│» ${prefix}blood-text
+│» ${prefix}blue-effect
+│» ${prefix}blue-glitter
+│» ${prefix}brickwall
+│» ${prefix}brokentext
+│» ${prefix}bubble-effect
+│» ${prefix}bulb-effect
+│» ${prefix}circuit 
+│» ${prefix}dark-gold-metal
+│» ${prefix}color-fireworks
+│» ${prefix}cool-metal
+│» ${prefix}decorated-cookie
+│» ${prefix}deluxe-gold
+│» ${prefix}dinamo
+│» ${prefix}deluxe-silver
+│» ${prefix}double-exposure
+│» ${prefix}dragon-fire
+│» ${prefix}eroded-metal
+│» ${prefix}firework
+│» ${prefix}fox-crossfire
+│» ${prefix}fun-certify1
+│» ${prefix}fun-certify2
+│» ${prefix}futuristic
+│» ${prefix}galaxy-effect2
+│» ${prefix}galaxy-effect
+│» ${prefix}galaxy-angel
 └───────
-
-┌── *Photo Oxy Menu*
-│» ${prefix}shadow
-│» ${prefix}romantic
-│» ${prefix}smoke
-│» ${prefix}burnpapper
-│» ${prefix}naruto
-│» ${prefix}lovemsg
-│» ${prefix}grassmsg
-│» ${prefix}lovetext
-│» ${prefix}coffecup
-│» ${prefix}butterfly
-│» ${prefix}harrypotter
-│» ${prefix}retrolol
-└───────
-
-┌── *Ephoto Menu*
-│» ${prefix}ffcover
-│» ${prefix}crossfire
-│» ${prefix}galaxy
-│» ${prefix}glass
-│» ${prefix}neon
-│» ${prefix}beach
-│» ${prefix}blackpink
-│» ${prefix}igcertificate
-│» ${prefix}ytcertificate
-└───────
-
 ┌── *Fun Menu*
 │» ${prefix}amigos
 │» ${prefix}pareja
@@ -359,64 +350,56 @@ exports.logomaker = (prefix) => {
 return`
 Este menu suele contener errores de api, algunos logos no funcionarán!
 ┌── *Text Pro Menu*
-│» ${prefix}3dchristmas
-│» ${prefix}3ddeepsea
-│» ${prefix}americanflag
+│» ${prefix}3d-effect
+│» ${prefix}1917-style
+│» ${prefix}3d-rubystone
+│» ${prefix}3d-text-sub-zombie
+│» ${prefix}3dengraved
+│» ${prefix}3dluxury
+│» ${prefix}3dlove
+│» ${prefix}3dgolden
 │» ${prefix}3dscifi
-│» ${prefix}3drainbow
+│» ${prefix}3dtext-effect
+│» ${prefix}3dunderwater
 │» ${prefix}3dwaterpipe
-│» ${prefix}halloweenskeleton
-│» ${prefix}sketch
-│» ${prefix}bluecircuit
-│» ${prefix}space
-│» ${prefix}metallic
-│» ${prefix}fiction
-│» ${prefix}greenhorror
-│» ${prefix}transformer
-│» ${prefix}berry
-│» ${prefix}thunder
-│» ${prefix}magma
-│» ${prefix}3dcrackedstone
-│» ${prefix}3dneonlight
-│» ${prefix}impressiveglitch
-│» ${prefix}naturalleaves
-│» ${prefix}fireworksparkle
-│» ${prefix}matrix
-│» ${prefix}dropwater
-│» ${prefix}harrypotter
-│» ${prefix}foggywindow
-│» ${prefix}neondevils
-│» ${prefix}christmasholiday
-│» ${prefix}3dgradient
-│» ${prefix}blackpink
-│» ${prefix}gluetext
-└───────
-
-┌── *Photo Oxy Menu*
-│» ${prefix}shadow
-│» ${prefix}romantic
-│» ${prefix}smoke
-│» ${prefix}burnpapper
-│» ${prefix}naruto
-│» ${prefix}lovemsg
-│» ${prefix}grassmsg
-│» ${prefix}lovetext
-│» ${prefix}coffecup
-│» ${prefix}butterfly
-│» ${prefix}harrypotter
-│» ${prefix}retrolol
-└───────
-
-┌── *Ephoto Menu*
-│» ${prefix}ffcover
-│» ${prefix}crossfire
-│» ${prefix}galaxy
-│» ${prefix}glass
-│» ${prefix}neon
-│» ${prefix}beach
-│» ${prefix}blackpink
-│» ${prefix}igcertificate
-│» ${prefix}ytcertificate
+│» ${prefix}alice-league-of-kings
+│» ${prefix}angel-wing-galaxy
+│» ${prefix}anubis
+│» ${prefix}arch-crossfire
+│» ${prefix}art-shader
+│» ${prefix}assassins-creed
+│» ${prefix} azzenka-league-of-kings
+│» ${prefix}birthday-cards
+│» ${prefix}birthday-greeting
+│» ${prefix}birthday-roses
+│» ${prefix}black-metal
+│» ${prefix}blood-frosted
+│» ${prefix}blood-text
+│» ${prefix}blue-effect
+│» ${prefix}blue-glitter
+│» ${prefix}brickwall
+│» ${prefix}brokentext
+│» ${prefix}bubble-effect
+│» ${prefix}bulb-effect
+│» ${prefix}circuit 
+│» ${prefix}dark-gold-metal
+│» ${prefix}color-fireworks
+│» ${prefix}cool-metal
+│» ${prefix}decorated-cookie
+│» ${prefix}deluxe-gold
+│» ${prefix}dinamo
+│» ${prefix}deluxe-silver
+│» ${prefix}double-exposure
+│» ${prefix}dragon-fire
+│» ${prefix}eroded-metal
+│» ${prefix}firework
+│» ${prefix}fox-crossfire
+│» ${prefix}fun-certify1
+│» ${prefix}fun-certify2
+│» ${prefix}futuristic
+│» ${prefix}galaxy-effect2
+│» ${prefix}galaxy-effect
+│» ${prefix}galaxy-angel
 └───────
 `
 }
