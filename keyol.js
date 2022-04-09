@@ -1304,6 +1304,19 @@ break
                 yol.sendMessage(m.chat, buttonMessage, { quoted: m })
             }
             break
+case 'smeme': case 'stickermeme': case 'stickmeme': {
+let { TelegraPh } = require('./lib/uploader')
+if (!text) return m.reply(`Enviar/responder foto con título ${prefix + command} *texto*`)
+if (text.includes('|')) return m.reply(`Enviar/responder foto con título ${prefix + command} *texto*`)
+if (!/image/.test(mime)) return m.reply(`Enviar/responder foto con título ${prefix + command} *texto*`)
+m.reply(mess.wait)
+mee = await yol.downloadAndSaveMediaMessage(quoted)
+mem = await TelegraPh(mee)
+meme = `https://api.memegen.link/images/custom/-/${text}.png?background=${mem}`
+memek = await yol.sendImageAsSticker(m.chat, meme, m, { packname: global.packname, author: global.author })
+await fs.unlinkSync(memek)
+}
+break
             case 'baka': case 'bakaa': {
                 m.reply(mess.wait)
             let buttons = [
