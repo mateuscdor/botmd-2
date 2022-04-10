@@ -810,7 +810,7 @@ break
                     await sleep(1500)
                     let btn = [{
                                 urlButton: {
-                                    displayText: 'Source Code',
+                                    displayText: 'Script bot',
                                     url: 'https://telegra.ph/file/137cc09589a28a90a7ed8.jpg'
                                 }
                             }, {
@@ -830,8 +830,8 @@ break
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Premium',
-                                    id: 'donar'
+                                    displayText: 'Ping and Runtine',
+                                    id: 'ping'
                                 }
                             }]
                       let txt = `「 Broadcast Bot 」\n\n${text}`
@@ -849,7 +849,7 @@ break
 		    await sleep(1500)
 		    let btn = [{
                                 urlButton: {
-                                    displayText: 'Source Code',
+                                    displayText: 'Script bot',
                                     url: 'https://telegra.ph/file/137cc09589a28a90a7ed8.jpg'
                                 }
                             }, {
@@ -869,8 +869,8 @@ break
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Premium',
-                                    id: 'donar'
+                                    displayText: 'Ping and Runtime',
+                                    id: 'ping'
                                 }
                             }]
                       let txt = `「 Broadcast Bot 」\n\n${text}`
@@ -1586,94 +1586,94 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 								"title": "COMANDOS DE GRUPO",
 								"rows": [
 									{
-										"title": "GRUPO CMD",
-										"description": "Mis funciones en grupos",
+										"title": "MENU GRUPO",
+										"description": "mostrar funciones de grupos",
 										"rowId": `${prefix}groupmenu`
 									}
 								]
 							},
 							{
-								"title": "KITZIA INC 2022 CARACTERÍSTICAS",
+								"title": "KITZIA INC 2022 ",
 								"rows": [
 									{
-										"title": "MENU CMD",
-										"description": "Mi menú completo!",
+										"title": "ALLMENU CMD",
+										"description": "mostrar el menú del bot completo!",
 										"rowId": `${prefix}allmenu`
 									},
 									{
-										"title": "DOWNLOAD CMD",
-										"description": "Cosas que puedo descargar",
+										"title": "MENU DESCARGAD",
+										"description": "mostrar funciones de descarga",
 										"rowId": `${prefix}downloadmenu`
 									},
 									{
-										"title": "SEARCH CMD",
-										"description": "Cosas que puedo buscar!",
+										"title": "SEARCH MENU",
+										"description": "menu de funciones para buscar en la web!",
 										"rowId": `${prefix}searchmenu`
 									},
 										{
-											"title": "ANIME CMD",
-										"description": "ANIMES RANDOMS",
+											"title": "ANIME MENU",
+										"description": "menu de anime random",
 										"rowId": `${prefix}menuanime`
 										},
 										{
-											"title": "DIVERSIDAD CMD",
-										"description": "menu de cosas divertidas",
+											"title": "MENU VARIADO",
+										"description": "menu de funcionds variadas",
 										"rowId": `${prefix}funmenu`
 										},
 										{
-											"title": "CONVERT CMD",
-										"description": "Menu de conversión",
+											"title": "MENU DE CONVERSIÓN",
+										"description": "mostrar menu para convertir stickers",
 										"rowId": `${prefix}convertmenu`
 										},
 										{
-										"title": "LOGOS CMD",
-										"description": "esto puede contener errores",
+										"title": "MENU LOGOS",
+										"description": "menu de logos Textpro",
 										"rowId": `${prefix}logomenu`
 										},
 										{
-											"title": "DATABASE CMD",
-										"description": "mi database",
+											"title": "DATABASE MENU",
+										"description": "comandos de la database",
 										"rowId": `${prefix}databasemenu`
 										},
 										{
-											"title": "MODIFICADOR CMD",
-										"description": "puedo reconvertir audiod",
+											"title": "MODIFICADORES DE AUDIO",
+										"description": "mostrar funciones para modificar audios",
 										"rowId": `${prefix}voicemenu`
 										}
 								]
 							},
 							{
-								"title": "PRINCIPAL",
+								"title": "MENU UTIL PARA EL BOT",
 								"rows": [
 									{
-										"title": " LO PRINCIPAL!",
-										"description": "esto es algo necesario para mi",
+										"title": "MAIN MENU!",
+										"description": "menú principal para uso del owner",
 										"rowId": `${prefix}mainmenu`
 									}
 								]
 							},
 							{
-								"title": "INFO DEL BOT",
+								"title": "QUE FUNCION CUMPLO SIENDO BOT?",
 								"rows": [
 									{
-										"title": "MI INFORMACIÓN",
-										"description": "Aqui te muestro mi información siendo un bot",
+										"title": "TU INFORMACIÓN",
+										"description": "Aqui te muestro mi info, que soy y que funciones cumplo",
 										"rowId": `${prefix}infobot`
 									}
 								]
 							},
 							{
-								"title": "OWNER",
+								"title": "MENU PARA EL CREADOR",
 								"rows": [
 									{
-										"title": "OWNER",
-										"description": "Características para mi owner",
+										"title": "MENU OWNER",
+										"description": "menú del creador",
 										"rowId": `${prefix}ownermenu`
 									}
 								]
 							},
 							{
-								"title": "CREDITOS",
+								"title": "CREDITOS ESPECIALES",
 								"rows": [
 									{
 										"title": "CreditosBots",
@@ -1864,7 +1864,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
             }
             break
 case 'infobot':
-await yol.send5ButImg(from, `Hola ${pushname} 🐦\n\nSoy ${botname}, soy un bot de WhatsApp Multi-Device Beta, estoy inspirada en una inteligencia artificial para ayuda\nSi encuentra algún tipo de error o bug, comprenda primero que estoy en version beta, tendre muchísimos errores :(, informe a mi propietario para que se solucione de inmediato\n\n• Version Qr : *Baileys-MD*.\n• Prefix : ( ${prefix} )\n• Tiempo de Servidor : ${runtime(process.uptime())} \n• Fecha del servidor : ${moment.tz('America/Guayaquil').format('DD/MM/YY')}\n•Gracias por preferirme como su bot de confianza, trataré de ayudar en muchas cosas` + '' + lang.infobot(prefix), `© ${footer}`,thumb, [{"urlButton": {"displayText": "Script bot","url": `${sc}`}},{"urlButton": {"displayText": "Api WhatsApp","url": `${myweb}`}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}},{"quickReplyButton": {"displayText": "allmenu","id": 'menu'}},{"quickReplyButton": {"displayText": "Ping and Runtime","id": 'ping'}}] )
+await yol.send5ButImg(from, `Hola ${pushname} 🐦\n\nSoy ${botname}, soy un bot de WhatsApp Multi-Device Beta, estoy inspirada en una inteligencia artificial para ayuda\nSi encuentra algún tipo de error o bug, comprenda primero que estoy en version beta, tendre muchísimos errores :(, informe a mi propietario para que se solucione de inmediato\nmis funciones principales son\n\n descargar musica usando el comando\n${prefix}play nombre musica\n${prefix}play2 nombre de la musica\n\npuedo crear stickers y hacer meme stickers con\n${prerix}sticker (mencionando imagen}\n${prefix}smeme (texto) mencionando imagen\n\ny mucho mas que puedes descubrir asistiendo en el menu!!\n\n• Version Qr : *Baileys-MD*.\n• Prefix : ( ${prefix} )\n• Tiempo de Servidor : ${runtime(process.uptime())} \n• Fecha del servidor : ${moment.tz('America/Guayaquil').format('DD/MM/YY')}\n•Gracias por preferirme como su bot de confianza, trataré de ayudar en muchas cosas` + '' + lang.infobot(prefix), `© ${footer}`,thumb, [{"urlButton": {"displayText": "Script bot","url": `${sc}`}},{"urlButton": {"displayText": "Api WhatsApp","url": `${myweb}`}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}},{"quickReplyButton": {"displayText": "allmenu","id": 'menu'}},{"quickReplyButton": {"displayText": "Ping and Runtime","id": 'ping'}}] )
 break
 case 'allmenu':
 	await yol.send5ButGif(from, `┌── *Info user*\n│» Nombre : ${pushname}\n│» Biografia : No detectada\n│» Numero : ${sender.split("@")[0]}\n│» Wa Api : http://wa.me/${sender.split("@")[0]}\n│» Usuario : ${isCreator ? `Owner ${ownername}` : isPremium ? `Usuario especial ${botname}` : `${botname}`}\n│» Estado : ${isCreator ? 'Owner ( ilimitado)' : isPremium ? 'Premium' : 'free'}\n│» Límite diario : ${isCreator ? 'Owner (ilimitado)' : isPremium ? 'Ilimitado' : (sender, limitharian)}\n│» Límite diario del juego : ${isCreator ? 'Owner (Ilimitado)' : (sender, limitgame)}\n└───────\n\n┌── *Info Bot*\n│» Biblioteca : Baileys Multi Device\n│» Nombre Bot : ${botname}\n│» Creador : ${ownername}\n│» Autor : DikaArdnt.\n│» Usuarios : ${Object.keys(global.db.data.users).length}\n└───────` + '\n' + lang.menu(prefix) , `${footer}`, [{"urlButton": {"displayText": "Script bot","url": `${sc}`}},{"urlButton": {"displayText": "Codigo Fuente","url": `${myweb}`}},{"quickReplyButton": {"displayText": "ser premium","id": 'donar'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}},{"quickReplyButton": {"displayText": "Sobre mí","id": 'infobot'}}] )
@@ -1903,10 +1903,10 @@ case 'voicemenu':
 	await yol.send5ButGif(from, `┌── *Info user*\n│» Nombre : ${pushname}\n│» Biografia : No detectada\n│» Numero : ${sender.split("@")[0]}\n│» Wa Api : http://wa.me/${sender.split("@")[0]}\n│» Usuario : ${isCreator ? `Owner ${ownername}` : isPremium ? `Usuario especial ${botname}` : `${botname}`}\n│» Estado : ${isCreator ? 'Owner ( ilimitado)' : isPremium ? 'Premium' : 'free'}\n│» Límite diario : ${isCreator ? 'Owner (ilimitado)' : isPremium ? 'Ilimitado' : (sender, limitharian)}\n│» Límite diario del juego : ${isCreator ? 'Owner (Ilimitado)' : (sender, limitgame)}\n└───────\n\n┌── *Info Bot*\n│» Biblioteca : Baileys Multi Device\n│» Nombre Bot : ${botname}\n│» Creador : ${ownername}\n│» Autor : DikaArdnt.\n│» Usuarios : ${Object.keys(global.db.data.users).length}\n└───────` + '\n' + lang.voice(prefix) , `${footer}`, [{"urlButton": {"displayText": "Script bot","url": `${sc}`}},{"urlButton": {"displayText": "Codigo fuente","url": `${myweb}`}},{"quickReplyButton": {"displayText": "Ping And Status","id": 'ping'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}},{"quickReplyButton": {"displayText": "Sobre mí","id": 'infobot'}}] )
 	break
 case 'creditos':
-await yol.send5ButImg(from, `` + '' + lang.thanksto(), `© ${footer}`,thumb, [{"urlButton": {"displayText": "Source Code","url": `${sc}`}},{"urlButton": {"displayText": "Codigo fuente","url": `${myweb}`}},{"quickReplyButton": {"displayText": "Menu lista","id": 'menu'}},{"quickReplyButton": {"displayText": "Ping y actividad ","id": 'ping'}},{"quickReplyButton": {"displayText": "Info sobre mi (Bot)","id": 'infobot'}}] )
+await yol.send5ButImg(from, `` + '' + lang.thanksto(), `© ${footer}`,thumb, [{"urlButton": {"displayText": "Script bot","url": `${sc}`}},{"urlButton": {"displayText": "Codigo fuente","url": `${myweb}`}},{"quickReplyButton": {"displayText": "Menu lista","id": 'menu'}},{"quickReplyButton": {"displayText": "Ping y actividad ","id": 'ping'}},{"quickReplyButton": {"displayText": "Info sobre mi (Bot)","id": 'infobot'}}] )
 break
 case 'donar':
-	await yol.send5ButImg(from, `` + '' + lang.donasi(), `${footer}`,thumb, [{"urlButton": {"displayText": "Source Code","url": `${sc}`}},{"urlButton": {"displayText": "Codigo fuente","url": `${myweb}`}},{"quickReplyButton": {"displayText": "Menu lista","id": 'menu'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}}] )
+	await yol.send5ButImg(from, `` + '' + lang.donasi(), `${footer}`,thumb, [{"urlButton": {"displayText": "Script bot","url": `${sc}`}},{"urlButton": {"displayText": "Codigo fuente","url": `${myweb}`}},{"quickReplyButton": {"displayText": "Menu lista","id": 'menu'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}}] )
 	break
 
             default:
