@@ -1587,13 +1587,13 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 										"rowId": `${prefix}searchmenu`
 									},
 										{
-											"title": "ANIME MENU",
-										"description": "menu de anime random",
-										"rowId": `${prefix}menuanime`
+											"title": "RANDOM MENU",
+										"description": "menu de imagenes randoms",
+										"rowId": `${prefix}randommenu
 										},
 										{
 											"title": "MENU VARIADO",
-										"description": "menu de funcionds variadas",
+										"description": "menu de funciones variadas",
 										"rowId": `${prefix}funmenu`
 										},
 										{
@@ -1854,7 +1854,7 @@ case 'downloadmenu':
 case 'searchmenu':
 	await yol.send5ButGif(from, `┌── *Info user*\n│» Nombre : ${pushname}\n│» Biografia : No detectada\n│» Numero : ${sender.split("@")[0]}\n│» Wa Api : http://wa.me/${sender.split("@")[0]}\n│» Usuario : ${isCreator ? `Owner ${ownername}` : isPremium ? `Usuario especial ${botname}` : `${botname}`}\n│» Estado : ${isCreator ? 'Owner ( ilimitado)' : isPremium ? 'Premium' : 'free'}\n│» Límite diario : ${isCreator ? 'Owner (ilimitado)' : isPremium ? 'Ilimitado' : (sender, limitharian)}\n│» Límite diario del juego : ${isCreator ? 'Owner (Ilimitado)' : (sender, limitgame)}\n└───────\n\n┌── *Info Bot*\n│» Biblioteca : Baileys Multi Device\n│» Nombre Bot : ${botname}\n│» Creador : ${ownername}\n│» Autor : DikaArdnt.\n│» Usuarios : ${Object.keys(global.db.data.users).length}\n└───────` + '\n' + lang.search(prefix) , `${footer}`, [{"urlButton": {"displayText": "Script bot","url": `${sc}`}},{"urlButton": {"displayText": "Codigo fuente","url": `${myweb}`}},{"quickReplyButton": {"displayText": "Ping And Status","id": 'ping'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}},{"quickReplyButton": {"displayText": "Sobre mí","id": 'infobot'}}] )
 	break
-case 'menuanime':
+case 'randommenu':
 	await yol.send5ButGif(from, `┌── *Info user*\n│» Nombre : ${pushname}\n│» Biografia : No detectada\n│» Numero : ${sender.split("@")[0]}\n│» Wa Api : http://wa.me/${sender.split("@")[0]}\n│» Usuario : ${isCreator ? `Owner ${ownername}` : isPremium ? `Usuario especial ${botname}` : `${botname}`}\n│» Estado : ${isCreator ? 'Owner ( ilimitado)' : isPremium ? 'Premium' : 'free'}\n│» Límite diario : ${isCreator ? 'Owner (ilimitado)' : isPremium ? 'Ilimitado' : (sender, limitharian)}\n│» Límite diario del juego : ${isCreator ? 'Owner (Ilimitado)' : (sender, limitgame)}\n└───────\n\n┌── *Info Bot*\n│» Biblioteca : Baileys Multi Device\n│» Nombre Bot : ${botname}\n│» Creador : ${ownername}\n│» Autor : DikaArdnt.\n│» Usuarios : ${Object.keys(global.db.data.users).length}\n└───────` + '\n' + lang.random(prefix) , `${footer}`, [{"urlButton": {"displayText": "Script bot","url": `${sc}`}},{"urlButton": {"displayText": "Codigo fuente","url": `${myweb}`}},{"quickReplyButton": {"displayText": "Ping And Status","id": 'ping'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}},{"quickReplyButton": {"displayText": "Sobre mí","id": 'infobot'}}] )
 	break
 case 'logomenu':
