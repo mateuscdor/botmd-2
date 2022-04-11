@@ -28,7 +28,7 @@ global.APIKeys = {
     'http://brizas-api.herokuapp.com': 'brizaloka',
     'https://api.violetics.pw': 'beta',
     'https://api-alc.herokuapp.com': 'ConfuMods',
-    'https://lzmods-api.xyz': 'DPO3y2ML
+    'https://lzmods-api.xyz': 'DPO3y2ML',
 }
 
 // Owner
