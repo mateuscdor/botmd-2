@@ -1311,7 +1311,17 @@ case 'anime': case 'waifu': case 'husbu': case 'neko': case 'shinobu': case 'meg
             break
             case 'loli': {
                 m.reply(mess.wait)
-                yol.sendMessage(m.chat, { image: { url: 'https://lzmods-api.xyz/api/nsfw/loli?apikey=DPO3y2ML' }, caption: 'Imagen H, no me hago responsable de las utilidades' + command }, { quoted: m })
+            let buttons = [
+                    {buttonId: `loli`, buttonText: {displayText: 'Next Imagen'}, type: 1}
+                ]
+                let buttonMessage = {
+                    image: { url: 'https://lzmods-api.xyz/api/nsfw/loli?apikey=DPO3y2ML' },
+                    caption: ` Random foxgirl`,
+                    footer: yol.user.name,
+                    buttons: buttons,
+                    headerType: 4
+                }
+                yol.sendMessage(m.chat, buttonMessage, { quoted: m })
             }
             break
             case 'nekooo': case 'nekoo': {
