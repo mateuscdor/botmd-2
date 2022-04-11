@@ -1272,6 +1272,14 @@ case 'anime': case 'waifu': case 'husbu': case 'neko': case 'shinobu': case 'meg
                 yol.sendMessage(m.chat, { image: { url: api('riykey', '/api/random/'+command, {}, 'apikey') }, caption: 'Generar imagen aleatoria de ' + command }, { quoted: m })
             }
             break
+            break
+case 'loli': {
+	        if (!isPremium && global.db.data.users[m.sender].limit < 1) return m.reply(mess.endLimit) // respon ketika limit habis
+		db.data.users[m.sender].limit -= 1
+                m.reply(mess.wait)
+                yol.sendMessage(m.chat, { image: { url: api('lzm', '/api/nsfw/'+command, {}, 'apikey') }, caption: 'Generar imagen aleatoria de ' + command }, { quoted: m })
+            }
+            break
             case 'avatar': {
                 m.reply(mess.wait)
                 yol.sendMessage(m.chat, { image: { url: api('bri', '/random/'+command, {}, 'apikey') }, caption: 'Generar imagen aleatoria de ' + command }, { quoted: m })
@@ -1302,21 +1310,6 @@ case 'anime': case 'waifu': case 'husbu': case 'neko': case 'shinobu': case 'meg
                 let buttonMessage = {
                     image: { url: 'https://coffee.alexflipnote.dev/random' },
                     caption: `☕ Random Coffe`,
-                    footer: yol.user.name,
-                    buttons: buttons,
-                    headerType: 4
-                }
-                yol.sendMessage(m.chat, buttonMessage, { quoted: m })
-            }
-            break
-            case 'loli': {
-                m.reply(mess.wait)
-            let buttons = [
-                    {buttonId: `loli`, buttonText: {displayText: 'Next Imagen'}, type: 1}
-                ]
-                let buttonMessage = {
-                    image: { url: 'https://lzmods-api.xyz/api/nsfw/loli?apikey=DPO3y2ML' },
-                    caption: ` Random foxgirl`,
                     footer: yol.user.name,
                     buttons: buttons,
                     headerType: 4
