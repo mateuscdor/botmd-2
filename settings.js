@@ -15,7 +15,8 @@ global.APIs = {
 	ryu: 'https://api-ryubotz.herokuapp.com',
         bri: 'http://brizas-api.herokuapp.com',
 	vio: 'https://api.violetics.pw',
-        cnf: 'https://api-alc.herokuapp.com',	
+        cnf: 'https://api-alc.herokuapp.com',
+        lzm: 'https://lzmods-api.xyz',	
 }
 
 // Apikey Website Api
@@ -27,6 +28,7 @@ global.APIKeys = {
     'http://brizas-api.herokuapp.com': 'brizaloka',
     'https://api.violetics.pw': 'beta',
     'https://api-alc.herokuapp.com': 'ConfuMods',
+    'https://lzmods-api.xyz': 'DPO3y2ML
 }
 
 // Owner
@@ -38,7 +40,7 @@ global.botname = 'Kitzia-Md'
 global.footer = 'Kitzia-Md'
 global.email = 'carlos.e.escobarmc@gmail.com'
 global.ig = 'https://instagram.com/c4rlos_9e'
-global.region = 'Planet Equador'
+global.region = 'Planet Equador +593'
 
 // Keperluan buttons
 global.myweb = 'https://github.com/DikaArdnt/Hisoka-Morou'
@@ -46,7 +48,7 @@ global.sc = 'https://telegra.ph/file/137cc09589a28a90a7ed8.jpg'
 
 // Wm
 global.packname = '🥀KitziaBot-Md🥀'
-global.author = 'WhatsApp Bot Multi-Device\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAnd Premium María'
+global.author = 'WhatsApp Bot Multi-Device'
 
 // Thumb & Image random
 global.thumb = fs.readFileSync('./image/keyol.jpg')
