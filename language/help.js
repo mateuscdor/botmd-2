@@ -427,20 +427,14 @@ return`
 ┌── *Random Menu*
 │» ${prefix}coffe
 │» ${prefix}imgpareja
-│» ${prefix}anime
-│» ${prefix}waifu
+│» ${prefix}avatar
 │» ${prefix}nekoo
 │» ${prefix}smug
 │» ${prefix}baka
-│» ${prefix}husbu
 │» ${prefix}cat
 │» ${prefix}foxgirl
-│» ${prefix}neko
-│» ${prefix}shinobu
-│» ${prefix}waifus (nsfw)
-│» ${prefix}nekos (nsfw)
-│» ${prefix}trap (nsfw)
-│» ${prefix}blowjob (nsfw)
+│» ${prefix}imggif
+│» ${prefix}loli (nsfw)
 └───────
 `
 }
