@@ -14,7 +14,8 @@ global.APIs = {
 	xteam: 'https://api.xteam.xyz',
 	ryu: 'https://api-ryubotz.herokuapp.com',
         bri: 'http://brizas-api.herokuapp.com',
-	vio: 'https://api.violetics.pw',	
+	vio: 'https://api.violetics.pw',
+        cnf: 'https://api-alc.herokuapp.com',	
 }
 
 // Apikey Website Api
@@ -25,6 +26,7 @@ global.APIKeys = {
     'https://api-ryubotz.herokuapp.com': 'RyuBotz',
     'http://brizas-api.herokuapp.com': 'brizaloka',
     'https://api.violetics.pw': 'beta',
+    'https://api-alc.herokuapp.com': 'ConfuMods',
 }
 
 // Owner
