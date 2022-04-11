@@ -536,7 +536,7 @@ let teks = ` *👥 Tag All*\n\n`
 	    break
                case 'encuesta': {
             if (!m.isGroup) throw mess.group
-            if (m.chat in vote) throw `_Todavía hay votos en este chat.!_\n\n*${prefix}hapusvote* - para borrar votos`
+            if (m.chat in vote) throw `_Todavía hay votos en este chat.!_\n\n*${prefix}deletevoto* - para borrar votos`
             if (!text) throw `Ingrese el motivo del voto, ejemplo: *${prefix + command} @Carlos debería ser admin?*`
             m.reply(`Comienza la votación!\n\n*${prefix}votopositivo* - por Si\n*${prefix}votonegativo* - por no\n*${prefix}checkvoto* - para comprobar el voto\n*${prefix}deletevoto* - para borrar votos`)
             vote[m.chat] = [q, [], []]
