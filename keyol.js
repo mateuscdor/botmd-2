@@ -1302,6 +1302,11 @@ message = await prepareWAMessageMedia({ image : { url: anu.thumbnail } }, { uplo
                 yol.sendMessage(m.chat, buttonMessage, { quoted: m })
             }
             break
+            case 'loli': {
+                m.reply(mess.wait)
+                yol.sendMessage(m.chat, { image: { url: 'https://lzmods-api.xyz/api/nsfw/loli?apikey=DPO3y2ML' }, caption: 'Imagen H, no me hago responsable de las utilidades' + command }, { quoted: m })
+            }
+            break
             case 'nekooo': case 'nekoo': {
                 m.reply(mess.wait)
             let buttons = [
