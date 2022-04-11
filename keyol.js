@@ -1266,6 +1266,8 @@ message = await prepareWAMessageMedia({ image : { url: anu.thumbnail } }, { uplo
             }
             break
             case 'anime': case 'waifu': case 'husbu': case 'neko': case 'shinobu': case 'megumin': case 'waifus': case 'nekos': case 'trap': case 'blowjob': {
+	        if (!isPremium && global.db.data.users[m.sender].limit < 1) return m.reply(mess.endLimit) // respon ketika limit habis
+		db.data.users[m.sender].limit -= 1
                 m.reply(mess.wait)
                 yol.sendMessage(m.chat, { image: { url: api('riykey', '/api/random/'+command, {}, 'apikey') }, caption: 'Generar imagen aleatoria de ' + command }, { quoted: m })
             }
@@ -1442,7 +1444,7 @@ break
 	        case 'tiktok': case 'tiktoknowm': {
                 if (!text) throw 'y el link?!'
                 m.reply(mess.wait)
-                let anu = await fetchJson(api('vio', '/api/downloader/tiktok', { url: text }, 'apikey'))
+                let anu = await fetchJson(api('riykey', '/downloader/tiktok', { url: text }, 'apikey'))
                 let buttons = [
                     {buttonId: `tiktokwm ${text}`, buttonText: {displayText: '► con marca de agua'}, type: 1},
                     {buttonId: `tiktokmp3 ${text}`, buttonText: {displayText: '♫ Audio'}, type: 1}
@@ -1460,7 +1462,7 @@ break
             case 'tiktokwm': case 'tiktokwatermark': {
                 if (!text) throw 'Ingrese el enlace de la consulta!'
                 m.reply(mess.wait)
-                let anu = await fetchJson(api('vio', '/api/downloader/tiktok', { url: text }, 'apikey'))
+                let anu = await fetchJson(api('riykey', '/downloader/tiktok', { url: text }, 'apikey'))
                 let buttons = [
                     {buttonId: `tiktoknowm ${text}`, buttonText: {displayText: '► Sin marca de agua'}, type: 1},
                     {buttonId: `tiktokmp3 ${text}`, buttonText: {displayText: '♫ Audio'}, type: 1}
@@ -1478,7 +1480,7 @@ break
             case 'tiktokmp3': case 'tiktokaudio': {
                 if (!text) throw 'Ingrese el enlace de la consulta!'
                 m.reply(mess.wait)
-                let anu = await fetchJson(api('vio', '/api/downloader/musically', { url: text }, 'apikey'))
+                let anu = await fetchJson(api('riykey', '/downloader/musically', { url: text }, 'apikey'))
                 let buttons = [
                     {buttonId: `tiktoknowm ${text}`, buttonText: {displayText: '► Sin marca de agua'}, type: 1},
                     {buttonId: `tiktokwm ${text}`, buttonText: {displayText: '► con marca de agua'}, type: 1}
