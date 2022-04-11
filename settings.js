@@ -79,7 +79,7 @@ global.limitharian = "10"
 global.limitgame = "5"
 global.limitawal = {
     premium: "Infinity",
-    free: 15
+    free: 3
 }
 
 // Logs update
