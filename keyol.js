@@ -1153,7 +1153,7 @@ break
                 if (!text) throw `Example : ${prefix + command} https://youtube.com/watch?v=PtFMh6Tccag%27 128kbps`
                 let quality = args[1] ? args[1] : '128kbps'
                 let media = await yta(text, quality)
-                if (media.filesize >= 100000) return m.reply('File Melebihi Batas '+util.format(media))
+                if (media.filesize >= 100000) return m.reply('Archivo por encima del límite '+util.format(media))
                 yol.sendImage(m.chat, media.thumb, ` Titulo : ${media.title}\n tamaño : ${media.filesizeF}\n Url : ${isUrl(text)}\n Ext : MP3\n Resolucion : ${args[1] || '128kbps'}`, m)
                 yol.sendMessage(m.chat, { audio: { url: media.dl_link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp3` }, { quoted: m })
             }
@@ -1163,7 +1163,7 @@ break
                 if (!text) throw `Ejemplo : ${prefix + command} https://youtube.com/watch?v=PtFMh6Tccag%27 360p`
                 let quality = args[1] ? args[1] : '360p'
                 let media = await ytv(text, quality)
-                if (media.filesize >= 100000) return m.reply('File Melebihi Batas '+util.format(media))
+                if (media.filesize >= 100000) return m.reply('Archivo por encima del límite '+util.format(media))
                 yol.sendMessage(m.chat, { video: { url: media.dl_link }, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: ` titulo : ${media.title}\n tamaño : ${media.filesizeF}\n Url : ${isUrl(text)}\n Ext : MP3\n Resolucion : ${args[1] || '360p'}` }, { quoted: m })
             }
             break
