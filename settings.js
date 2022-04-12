@@ -21,7 +21,7 @@ global.APIs = {
 
 // Apikey Website Api
 global.APIKeys = {
-	'https://zenzapi.xyz': 'c81fd00f95', // masukin apikey disini
+	'https://zenzapi.xyz': 'sanzychan01', // masukin apikey disini
     'https://hardianto.xyz': 'hardianto',
     'https://api.xteam.xyz': '5bd33b276d41d6b4',
     'https://api-ryubotz.herokuapp.com': 'RyuBotz',
